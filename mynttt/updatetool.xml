@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>UpdateTool</Name>
+  <Repository>mynttt/updatetool</Repository>
+  <Registry>https://hub.docker.com/r/mynttt/updatetool</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/mynttt/UpdateTool/issues</Support>
+  <Project>https://github.com/mynttt/UpdateTool</Project>
+  <Overview>Update Tool allows you to update/refresh the IMDB ratings of movies/TV shows within your plex libraries!</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI/>
+  <TemplateURL>false</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/mynttt/UpdateTool/master/img/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Update Tool allows you to update/refresh the IMDB ratings of movies/TV shows within your plex libraries!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <Name>Plex Data Directory</Name>
+      <HostDir>PLEX_MEDIA_SERVER_DIR</HostDir>
+      <ContainerDir>/plexdata</ContainerDir>
+      <Mode>rw</Mode>
+      <Description>Container Path: /plexdata</Description>
+    </Volume>
+    <Volume>
+      <Name>Config Directory</Name>
+      <HostDir>/mnt/user/appdata/UpdateTool</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+      <Description>Container Path: /config</Description>
+  </Data>
+  <Environment>
+    <Variable>
+       <Name>Run every n hours</Name>
+       <Key>RUN_EVERY_N_HOURS</Key>
+       <Value>12</Value>
+       <Description>Forces tool to rescan every n hours</Description>
+    </Variable>
+    <Variable>
+       <Name>TMDB API</Name>
+       <Key>TMDB_API_KEY</Key>
+       <Value>your_tmbdb_api_key</Value>
+       <Description>Allows to also update ratings for TMDB matched items. (Leave blank if unwanted)</Description>
+    </Variable>
+    <Variable>
+       <Name>TVDB API</Name>
+       <Key>TVDB_API_KEY</Key>
+       <Value>your_tvdb_api_key</Value>
+       <Description>Allows to also update ratings for TVDB matched TV Show items. (Leave blank if unwanted)</Description>
+    </Variable>
+  </Environment>
+  <Labels/>
+</Container>
