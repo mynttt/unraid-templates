@@ -7,4 +7,4 @@ Copy the url `https://github.com/mynttt/unraid-templates` into the field `Templa
 
 # Current templates
 
-![https://github.com/mynttt/UpdateTool/](https://raw.githubusercontent.com/mynttt/UpdateTool/master/img/icon.png | width=100)
+<a href="https://github.com/mynttt/UpdateTool/"><img src="https://raw.githubusercontent.com/mynttt/UpdateTool/master/img/icon.png" width="100" /></a>
