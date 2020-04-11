@@ -29,6 +29,7 @@
        Target="/plexdata" 
        Default="PLEX_MEDIA_SERVER_DIR" 
        Mode="rw" 
+       Display="always"
        Description="The 'Plex Media Server' dir that contains directories like 'Plugin Support'."
        Required="true">PLEX_MEDIA_SERVER_DIR</Config>
       
@@ -38,6 +39,7 @@
        Target="/config" 
        Default="/mnt/user/appdata/UpdateTool" 
        Mode="rw" 
+       Display="always"
        Description="Configuration files are stored here."
        Required="true">/mnt/user/appdata/PMS</Config>
           
