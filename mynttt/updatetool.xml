@@ -37,6 +37,7 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
       <Description>Container Path: /config</Description>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
