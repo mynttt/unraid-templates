@@ -1,9 +1,11 @@
 # unraid-templates
 
 
-This repository contains templates for Unraid.
+This repository contains docker templates for Unraid.
 
 Copy the url `https://github.com/mynttt/unraid-templates` into the field `Template repositories` on the `DOCKER` tab and hit `SAVE`.
+
+You can then select the template by clicking add container in the left bottom corner.
 
 # Current templates
 
