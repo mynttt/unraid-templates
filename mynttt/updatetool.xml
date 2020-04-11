@@ -1,5 +1,3 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <Container version="2">
    <Name>UpdateTool</Name>
@@ -36,4 +34,3 @@
    <Environment />
    <Labels />
 </Container>
-
