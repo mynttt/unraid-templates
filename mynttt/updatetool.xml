@@ -23,76 +23,86 @@
   <Networking>
     <Mode>bridge</Mode>
   </Networking>
-     <Config 
-       Type="Path" 
-       Name="Plex Data Directory" 
-       Target="/plexdata" 
-       Default="PLEX_MEDIA_SERVER_DIR" 
-       Mode="rw" 
-       Display="always"
-       Description="The 'Plex Media Server' dir that contains directories like 'Plugin Support'."
-       Required="true">PLEX_MEDIA_SERVER_DIR</Config>
+  <Config 
+    Type="Path" 
+    Name="Plex Data Directory" 
+    Target="/plexdata" 
+    Default="PLEX_MEDIA_SERVER_DIR" 
+    Mode="rw" 
+    Display="always"
+    Description="The 'Plex Media Server' dir that contains directories like 'Plugin Support'."
+    Required="true">PLEX_MEDIA_SERVER_DIR</Config>
       
-      <Config 
-       Type="Path" 
-       Name="Config directory" 
-       Target="/config" 
-       Default="/mnt/user/appdata/UpdateTool" 
-       Mode="rw" 
-       Display="always"
-       Description="Configuration files are stored here."
-       Required="true">/mnt/user/appdata/PMS</Config>
+  <Config 
+    Type="Path" 
+    Name="Config directory" 
+    Target="/config" 
+    Default="/mnt/user/appdata/UpdateTool" 
+    Mode="rw" 
+    Display="always"
+    Description="Configuration files are stored here."
+    Required="true">/mnt/user/appdata/PMS</Config>
           
-          <Config 
-       Type="Variable" 
-       Name="Invoke every n hour(s)" 
-       Target="RUN_EVERY_N_HOURS" 
-       Default="12" 
-       Description="Invoke the tool every n hour(s) to scan the libraries" 
-       Mask="false" 
-       Display="always" 
-       Required="true">12</Config>
+  <Config 
+    Type="Variable" 
+    Name="Invoke every n hour(s)" 
+    Target="RUN_EVERY_N_HOURS" 
+    Default="12" 
+    Description="Invoke the tool every n hour(s) to scan the libraries" 
+    Mask="false" 
+    Display="always" 
+    Required="true">12</Config>
        
-    <Config 
-       Type="Variable" 
-       Name="TMDB API Key" 
-       Target="TMDB_API_KEY" 
-       Default="" 
-       Description="TMDB API Key - Resolves libraries with TMDB agent matched movies" 
-       Mask="false" 
-       Display="always" 
-       Required="false"></Config>
+  <Config 
+    Type="Variable" 
+    Name="TMDB API Key" 
+    Target="TMDB_API_KEY" 
+    Default="" 
+    Description="TMDB API Key - Resolves libraries with TMDB agent matched movies" 
+    Mask="false" 
+    Display="always" 
+    Required="false"/>
        
-    <Config 
-       Type="Variable" 
-       Name="TVDB API Key" 
-       Target="TVDB_API_KEY" 
-       Default="" 
-       Description="TVDB API Key - Resolves TV Show libraries with TVDB agent matched shows" 
-       Mask="false" 
-       Display="always" 
-       Required="false"></Config>
+  <Config 
+    Type="Variable" 
+    Name="TVDB API Key" 
+    Target="TVDB_API_KEY" 
+    Default="" 
+    Description="TVDB API Key - Resolves TV Show libraries with TVDB agent matched shows" 
+    Mask="false" 
+    Display="always" 
+    Required="false"/>
        
-    <Config 
-       Type="Variable" 
-       Name="Library Ignore List" 
-       Target="IGNORE_LIBS" 
-       Default="" 
-       Description="You can ignore libraries here by supplying their IDs like this: Single Library => '1' | Multiple Libraries => '1;2;3'. Ignored libraries will not be scanned or updated. More in the original github readme." 
-       Mask="false" 
-       Display="advanced" 
-       Required="false"></Config>
+  <Config 
+    Type="Variable" 
+    Name="Library Ignore List" 
+    Target="IGNORE_LIBS" 
+    Default="" 
+    Description="You can ignore libraries here by supplying their IDs like this: Single Library => '1' | Multiple Libraries => '1;2;3'. Ignored libraries will not be scanned or updated. More in the original github readme." 
+    Mask="false" 
+    Display="advanced" 
+    Required="false"/>
        
-    <Config 
-       Type="Variable" 
-       Name="Capabilities Configuration" 
-       Target="CAPABILITIES" 
-       Default="" 
-       Description="Allows you to specify UpdateTool behavior. Supply capabilities like this: Single => 'NO_TV' | Multiple => 'NO_TV;NO_MOVIE'. More in the original github readme." 
-       Mask="false" 
-       Display="advanced" 
-       Required="false"></Config>
-       <Data/>
-        <Environment/>
-       <Labels/>
+  <Config 
+    Type="Variable" 
+    Name="Capabilities Configuration" 
+    Target="CAPABILITIES" 
+    Default="" 
+    Description="Allows you to specify UpdateTool behavior. Supply capabilities like this: Single => 'NO_TV' | Multiple => 'NO_TV;NO_MOVIE'. More in the original github readme." 
+    Mask="false" 
+    Display="advanced" 
+    Required="false"/>
+    
+  <Config
+    Type="Variable"
+    Name="JVM Maximum Heap Size"
+    Target="JVM_MAX_HEAP"
+    Default="256m"
+    Description="Allows to specify the maximum heap size that the executing JVM can allocate. Only change this if you run into out of memory issues with very large (40000+ items) libraries. Example: 256m, 512m, 1g, 2g"
+    Mask="false"
+    Display="advanced"
+    Required="true">256m</Config>
+  <Data/>
+  <Environment/>
+  <Labels/>
  </Container>
