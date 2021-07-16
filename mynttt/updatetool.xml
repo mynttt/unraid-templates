@@ -102,6 +102,17 @@
     Mask="false"
     Display="advanced"
     Required="true">256m</Config>
+  
+  <Config
+    Type="Variable"
+    Name="Override Database Location"
+    Target="OVERRIDE_DATABASE_LOCATION"
+    Default=""
+    Description="Allows to override the location of the database (folder which contains the database, not the database itself) in case that the default Plex folder structure is violated. Example: /opt/plexdatabase"
+    Mask="false"
+    Display="advanced"
+    Required="false"/>
+    
   <Data/>
   <Environment/>
   <Labels/>
