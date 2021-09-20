@@ -127,8 +127,8 @@
     Type="Variable"
     Name="Native Plex SQLite write access"
     Target="USE_PLEX_SQLITE_BINARY_FOR_WRITE_ACCESS"
-    Default=""
-    Description="Allows to use the non-standard SQLite binary that has been compiled by Plex. Set this to 'true' to enable the feature. This can help if this tool corrupts your database."
+    Default="true"
+    Description="Allows to use the non-standard SQLite binary that has been compiled by Plex. Set this to 'true' to enable the feature (now a default value!). This can help if this tool corrupts your database."
     Mask="false"
     Display="advanced"
     Required="false"/>
