@@ -82,6 +82,16 @@
     Mask="false" 
     Display="advanced" 
     Required="false"/>
+
+  <Config 
+    Type="Variable" 
+    Name="Opt-in for libraries using the new TV Show agent." 
+    Target="UNLOCK_FOR_NEW_TV_AGENT" 
+    Default="" 
+    Description="You can opt-in libraries using the new TV show agent here to be processed by this tool by supplying their IDs like this: Single Library => '1' | Multiple Libraries => '1;2;3'. Ignored libraries will not be processed. More in the original github readme." 
+    Mask="false" 
+    Display="advanced" 
+    Required="false"/>
        
   <Config 
     Type="Variable" 
@@ -113,6 +123,16 @@
     Display="advanced"
     Required="false"/>
     
+  <Config
+    Type="Variable"
+    Name="Native Plex SQLite write access"
+    Target="USE_PLEX_SQLITE_BINARY_FOR_WRITE_ACCESS"
+    Default=""
+    Description="Allows to use the non-standard SQLite binary that has been compiled by Plex. Set this to 'true' to enable the feature. This can help if this tool corrupts your database."
+    Mask="false"
+    Display="advanced"
+    Required="false"/>
+
   <Data/>
   <Environment/>
   <Labels/>
