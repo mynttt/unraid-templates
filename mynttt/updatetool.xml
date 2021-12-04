@@ -41,7 +41,7 @@
     Mode="rw" 
     Display="always"
     Description="Configuration files are stored here."
-    Required="true">/mnt/user/appdata/PMS</Config>
+    Required="true">/mnt/user/appdata/UpdateTool</Config>
           
   <Config 
     Type="Variable" 
