@@ -132,6 +132,16 @@
     Mask="false"
     Display="advanced"
     Required="false"/>
+  
+  <Config
+    Type="Variable"
+    Name="Restart application automatically after 10 seconds without halting the container"
+    Target="RESTART_ON_CRASH"
+    Default="false"
+    Description="When set to 'true' the application will restart automatically after 10 seconds in case a crash is encountered. Disabled by default as issues with the tool can only be detected by activly supervising the log."
+    Mask="false"
+    Display="advanced"
+    Required="false"/>
 
   <Data/>
   <Environment/>
