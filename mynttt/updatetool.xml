@@ -47,7 +47,7 @@
     Type="Variable" 
     Name="Invoke every n hour(s)" 
     Target="RUN_EVERY_N_HOURS" 
-    Default="12" 
+    Default="24" 
     Description="Invoke the tool every n hour(s) to scan the libraries" 
     Mask="false" 
     Display="always" 
